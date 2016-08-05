@@ -1,0 +1,29 @@
+@import 'configs/variables';
+@import 'components/misc';
+@import 'layout/header';
+@import 'layout/footer';
+
+body {
+	width: 100%;
+	margin: 0px;
+	background-color: $mainBgColor;
+	
+
+}
+
+#body{
+	.container {
+		width: $width;
+		overflow: hidden;
+		&.after-header {
+			padding-top: 40px;
+		}
+		.col {
+			width: getColumnWidth($width, $numColumns, $margin);
+			margin: auto $margin;
+			float: left;
+			@extend .base-font;
+			color: #000;
+		}
+	}
+}

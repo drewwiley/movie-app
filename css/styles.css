@@ -1,0 +1,77 @@
+/**
+ * @file
+ * SMACSS Modules
+ *
+ * Adds modular sets of styles.
+ *
+ * Additional useful selectors can be found in Zen's online documentation.
+ * https://drupal.org/node/1707736
+ */
+/* line 32, ../compass/sass/components/_misc.scss */
+.base-font, #body .container .col {
+  font-family: "source-serif-pro",Georgia,"Times New Roman",Times,serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ddd;
+}
+
+/* line 8, ../compass/sass/layout/_header.scss */
+#header {
+  width: 100%;
+  position: fixed;
+  background-color: red;
+  height: 30px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 14, ../compass/sass/layout/_header.scss */
+#header .circle {
+  border-radius: 20px;
+  background-color: #2A2A2A;
+  border: 3px solid #0000ff;
+  height: 30px;
+  width: 30px;
+}
+
+/* line 5, ../compass/sass/layout/_footer.scss */
+#footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  height: 30px;
+  background-color: blue;
+}
+
+/* line 6, ../compass/sass/styles.scss */
+body {
+  width: 100%;
+  margin: auto 0px;
+  background-color: #2A2A2A;
+}
+
+/* line 15, ../compass/sass/styles.scss */
+#body .container {
+  perspective: 200px;
+  width: 1200px;
+  overflow: hidden;
+}
+/* line 20, ../compass/sass/styles.scss */
+#body .container.after-header {
+  padding-top: 40px;
+}
+/* line 23, ../compass/sass/styles.scss */
+#body .container .col {
+  perspective: 1000px;
+  transform: rotatex(6deg);
+  width: 240px;
+  margin: auto 0px;
+  float: left;
+  color: #000;
+}
+
+/* line 35, ../compass/sass/styles.scss */
+img {
+  max-height: 450px;
+}
